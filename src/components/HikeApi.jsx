@@ -33,6 +33,8 @@ export default class MyComponent extends Component {
   }
 
   render() {
+
+
     const { error, isLoaded, trails } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
@@ -44,9 +46,17 @@ export default class MyComponent extends Component {
           {trails.map(trail => (
             <li key={trail.name}>
               {trail.name}
-              <br/>  
+              <br/>
               {trail.type}
+              <br/>
+              {trail.difficulty}
+              <br/>
+              {trail.url}
+              <br/>
+              {trail.imgSmallMed}
+              <hr/>
             </li>
+
           ))}
         </ul>
       );
