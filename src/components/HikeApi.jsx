@@ -53,7 +53,7 @@ export default class MyComponent extends Component {
               <br/>
               {trail.url}
               <br/>
-              {trail.imgSmallMed}
+              <img style={{width: 175, height: 175}} className='tc br3' alt='none' src={trail.imgSmallMed} />
               <hr/>
             </li>
 
