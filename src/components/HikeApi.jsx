@@ -45,13 +45,15 @@ export default class MyComponent extends Component {
         <ul>
           {trails.map(trail => (
             <li key={trail.name}>
-              {trail.name}
+              Name: {trail.name}
               <br/>
-              {trail.type}
+              Trail Type: {trail.type}
               <br/>
-              {trail.difficulty}
+              Difficulty: {trail.difficulty}
               <br/>
-              {trail.url}
+              Condition: {trail.conditionStatus}
+              <br/>
+              URL: {trail.url}
               <br/>
               <img style={{width: 175, height: 175}} className='tc br3' alt='none' src={trail.imgSmallMed} />
               <hr/>
